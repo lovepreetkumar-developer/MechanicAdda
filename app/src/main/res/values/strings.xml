@@ -1,0 +1,76 @@
+<resources>
+
+    <string name="app_name">Mechanic Adda</string>
+    <string name="dummy">Dummy</string>
+    <string name="share_app">Share Car Service</string>
+    <string name="notification_channel_id">default</string>
+
+    <string name="hd">HD</string>
+    <string name="liked">Liked</string>
+    <string name="trending">Trending</string>
+    <string name="application_not_found">Application not found!</string>
+    <string name="search_tenor">Search Tenor</string>
+    <string name="share_app_content" translatable="false">“Let me recommend you one of the best Application to see and share worlds\'s top funny and viral GIFs”
+
+\n\nAn application that make you lough.
+\n\nThis application is free to use :
+\nhttps://play.google.com/store/apps/details?id=com.techfathers.mechanic_adda</string>
+    <string name="time_to_update">Time To Update</string>
+    <string name="update_app">Update App</string>
+    <string name="via_tenor">Via Tenor</string>
+    <string name="powered_by_tenor">Powered By Tenor</string>
+    <string name="permission_required">Permissions Required</string>
+    <string name="permission_msg">Needs all permissions to work properly. Grant them in settings. And try again.</string>
+    <string name="permission_goto">GOTO SETTINGS</string>
+    <string name="cancel">Cancel</string>
+    <string name="please_wait_for_a_second">Please wait for a second, Gif is downloading…</string>
+    <string name="required_permissions_not_granted">Required Permissions not granted</string>
+    <string name="can_you_please_update_app">Can you please update the application, so that we can serve you the better experience?</string>
+    <string name="gif_downloading">Gif Downloading</string>
+    <string name="this_app_makes_your_life_easier">This app makes your life easier</string>
+    <string name="skip">Skip</string>
+    <string name="start">Start</string>
+    <string name="lorem_ipsum_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</string>
+    <string name="near_workshops">Near Workshops</string>
+    <string name="services">Services</string>
+    <string name="periodic_services">Periodic Services</string>
+    <string name="periodic_service">Periodic Service</string>
+    <string name="custom_services">Custom Services</string>
+    <string name="custom_service">Custom Service</string>
+    <string name="basic_service">Basic Service</string>
+    <string name="additional_services">Additional Services</string>
+    <string name="consult">Consult</string>
+    <string name="submit_request">Submit Request</string>
+    <string name="email_optional">Email (optional)</string>
+    <string name="full_name">Full Name</string>
+    <string name="enter_full_name">Enter Full Name</string>
+    <string name="enter_your_email">Enter Your Email</string>
+    <string name="comments">Comments</string>
+    <string name="write_here">Write Here…</string>
+    <string name="note_the_payment_will_be_finalized_at_garage">Note : The payment will be finalized at Garage.</string>
+    <string name="hire_mechanic">Hire Mechanic</string>
+    <string name="location">Location</string>
+    <string name="enter_your_location">Enter Your Location</string>
+    <string name="your_request_has_been_submitted">Your request has been submitted, We will contact you shortly. Thank You.</string>
+    <string name="mechanic">Mechanic</string>
+    <string name="adda">Adda</string>
+    <string name="admin_login">Admin Login</string>
+    <string name="sign_in">Sign in</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="requests">Requests</string>
+    <string name="request_details">Request Details</string>
+    <string name="not_given">Not Given</string>
+    <string name="mark_completed">Mark Completed</string>
+    <string name="mobile_no">Mobile No.</string>
+    <string name="duis_lacinia">Duis lacinia mauris felis, sit amet iaculis dolor semper a. Suspendisse potenti. Sed dignissim augue lorem, id tempus urna vulputate in. Donec sed vestibulum ex. Praesent vel luctus arcu. Vestibulum nec augue mi. Quisque in eros augue. Praesent placerat orci faucibus enim imperdiet, tincidunt</string>
+    <string name="ok">OK</string>
+    <string name="email_is_not_valid">Email is not valid.</string>
+    <string name="password_is_not_valid">Password is not valid.</string>
+    <string name="are_you_sure_to_logout">Are you sure you want to logout?</string>
+    <string name="no_data_found">No request found</string>
+    <string name="request_has_been_marked_successfully">Request has been marked successfully, It will not show again in list.</string>
+    <string name="enter_your_mobile_no">Enter Your Mobile No.</string>
+
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="pos"
+            type="Integer" />
+
+        <variable
+            name="model"
+            type="com.techfathers.mechanic_adda.models.WorkshopModel" />
+
+        <variable
+            name="callback"
+            type="com.techfathers.mechanic_adda.ui.base.BaseItem.OnItemClickListener" />
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_marginEnd="@dimen/_3sdp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="@{(v)->callback.onItemClick(v,model,pos)}"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="0dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="wrap_content"
+            android:background="@color/green_transparent"
+            android:orientation="vertical"
+            android:padding="@dimen/_3sdp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_margin="@dimen/_1sdp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        app:simple_resource="@{model.background}"
+                        tools:src="@drawable/image_workshop_1" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CustomTextViewSemiBold"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:text="20% OFF"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_4sdp"
+                android:paddingBottom="@dimen/_4sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_location"
+                    style="@style/CustomTextViewBold"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:text="@{model.name}"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    app:setSelectedTrueString="@{null}"
+                    tools:text="Hyundai Car Periodic" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CustomTextViewRegular"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:text="Starting at Rs.2000"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_8sdp"
+                    app:setSelectedTrueString="@{null}" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>

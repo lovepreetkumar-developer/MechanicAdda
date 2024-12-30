@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="callback"
+            type="com.techfathers.mechanic_adda.ui.base.BaseCallback" />
+
+        <variable
+            name="model"
+            type="com.techfathers.mechanic_adda.models.RequestModel" />
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/image_splash">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_child"
+            app:callback="@{callback}" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/view_center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_centerInParent="true" />
+
+            <RelativeLayout
+                android:id="@+id/rl_view_lottie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/view_center"
+                android:layout_centerInParent="true">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/lottie_animation"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    app:lottie_autoPlay="false"
+                    app:lottie_rawRes="@raw/animation_tick" />
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_message"
+                style="@style/CustomTextViewRegular"
+                android:layout_below="@+id/view_center"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:gravity="center"
+                android:text="@string/request_has_been_marked_successfully"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_whole_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/tv_mark">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <View
+                            android:id="@+id/view"
+                            android:layout_width="@dimen/_2sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:background="@color/green" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_booking_type"
+                            style="@style/CustomTextViewMedium"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_toEndOf="@+id/view"
+                            android:includeFontPadding="false"
+                            android:text="PERIODIC SERVICE"
+                            android:textAllCaps="true"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/_13sdp" />
+
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CustomTextViewRegular"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="@string/full_name"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_full_name"
+                        style="@style/CustomTextViewMedium"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:background="@drawable/bg_border_gray_light_4sdp"
+                        android:ellipsize="end"
+                        android:paddingStart="@dimen/_12sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingEnd="@dimen/_12sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:singleLine="true"
+                        android:text="@{model.full_name}" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CustomTextViewRegular"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="@string/email"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_email"
+                        style="@style/CustomTextViewMedium"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:background="@drawable/bg_border_gray_light_4sdp"
+                        android:ellipsize="end"
+                        android:paddingStart="@dimen/_12sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingEnd="@dimen/_12sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:singleLine="true"
+                        android:text="@{model.email}" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CustomTextViewRegular"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="@string/mobile_no"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_mobile_no"
+                        style="@style/CustomTextViewMedium"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:background="@drawable/bg_border_gray_light_4sdp"
+                        android:ellipsize="end"
+                        android:paddingStart="@dimen/_12sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingEnd="@dimen/_12sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:singleLine="true"
+                        android:text="@{model.mobile_no}" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CustomTextViewRegular"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="@string/location"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_location"
+                        style="@style/CustomTextViewMedium"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:background="@drawable/bg_border_gray_light_4sdp"
+                        android:paddingStart="@dimen/_12sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingEnd="@dimen/_12sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:text="@{model.location}" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CustomTextViewRegular"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="@string/comments"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_comments"
+                        style="@style/CustomTextViewMedium"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:background="@drawable/bg_border_gray_light_4sdp"
+                        android:gravity="start"
+                        android:minLines="4"
+                        android:paddingStart="@dimen/_12sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingEnd="@dimen/_12sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:text="@{model.comments}" />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_mark"
+                style="@style/CustomTextViewSemiBold"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:background="@color/green"
+                android:gravity="center"
+                android:onClick="@{(v)->callback.onClick(v)}"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/mark_completed"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>

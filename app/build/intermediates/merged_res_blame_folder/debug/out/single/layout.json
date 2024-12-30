@@ -1,0 +1,110 @@
+[
+    {
+        "merged": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_login.xml",
+        "source": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\src\\main\\res\\layout\\fragment_login.xml"
+    },
+    {
+        "merged": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_intro.xml",
+        "source": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\src\\main\\res\\layout\\fragment_intro.xml"
+    },
+    {
+        "merged": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\toolbar_child.xml",
+        "source": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\src\\main\\res\\layout\\toolbar_child.xml"
+    },
+    {
+        "merged": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_book_request.xml",
+        "source": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\src\\main\\res\\layout\\fragment_book_request.xml"
+    },
+    {
+        "merged": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\bottom_sheet_app_share.xml",
+        "source": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\src\\main\\res\\layout\\bottom_sheet_app_share.xml"
+    },
+    {
+        "merged": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_all_requests.xml",
+        "source": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\src\\main\\res\\layout\\fragment_all_requests.xml"
+    },
+    {
+        "merged": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\partial_side_menu.xml",
+        "source": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\src\\main\\res\\layout\\partial_side_menu.xml"
+    },
+    {
+        "merged": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_booked_request.xml",
+        "source": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\src\\main\\res\\layout\\item_booked_request.xml"
+    },
+    {
+        "merged": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_service_details.xml",
+        "source": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\src\\main\\res\\layout\\fragment_service_details.xml"
+    },
+    {
+        "merged": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_search_location.xml",
+        "source": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\src\\main\\res\\layout\\item_search_location.xml"
+    },
+    {
+        "merged": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_welcome_slide.xml",
+        "source": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\src\\main\\res\\layout\\item_welcome_slide.xml"
+    },
+    {
+        "merged": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialog_message.xml",
+        "source": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\src\\main\\res\\layout\\dialog_message.xml"
+    },
+    {
+        "merged": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_periodic_services.xml",
+        "source": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\src\\main\\res\\layout\\fragment_periodic_services.xml"
+    },
+    {
+        "merged": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\partial_app_bar_home.xml",
+        "source": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\src\\main\\res\\layout\\partial_app_bar_home.xml"
+    },
+    {
+        "merged": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_near_workshops.xml",
+        "source": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\src\\main\\res\\layout\\item_near_workshops.xml"
+    },
+    {
+        "merged": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_home.xml",
+        "source": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\src\\main\\res\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_home.xml",
+        "source": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\src\\main\\res\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\toolbar_auth.xml",
+        "source": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\src\\main\\res\\layout\\toolbar_auth.xml"
+    },
+    {
+        "merged": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\toolbar_home.xml",
+        "source": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\src\\main\\res\\layout\\toolbar_home.xml"
+    },
+    {
+        "merged": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_request_details.xml",
+        "source": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\src\\main\\res\\layout\\fragment_request_details.xml"
+    },
+    {
+        "merged": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_splash.xml",
+        "source": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\src\\main\\res\\layout\\fragment_splash.xml"
+    },
+    {
+        "merged": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_trending_term.xml",
+        "source": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\src\\main\\res\\layout\\item_trending_term.xml"
+    },
+    {
+        "merged": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialog_progress_circle.xml",
+        "source": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\src\\main\\res\\layout\\dialog_progress_circle.xml"
+    },
+    {
+        "merged": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialog_alert.xml",
+        "source": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\src\\main\\res\\layout\\dialog_alert.xml"
+    },
+    {
+        "merged": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_periodic_service.xml",
+        "source": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\src\\main\\res\\layout\\item_periodic_service.xml"
+    },
+    {
+        "merged": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_service_detail_slide.xml",
+        "source": "E:\\Freelancing\\Mrinal\\MechanicAddaProject\\MechanicAdda\\app\\src\\main\\res\\layout\\item_service_detail_slide.xml"
+    }
+]

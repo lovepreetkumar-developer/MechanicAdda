@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="callback"
+            type="com.techfathers.mechanic_adda.ui.base.BaseCallback" />
+
+        <variable
+            name="model"
+            type="com.techfathers.mechanic_adda.models.ServiceModel" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/image_splash">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_child"
+            app:callback="@{callback}" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tv_consult"
+            android:layout_below="@+id/toolbar">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_140sdp">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/vpSlides"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tab_layout_dots"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@color/transparent"
+                        app:tabBackground="@drawable/intro_tab_selector"
+                        app:tabIndicatorHeight="0dp"
+                        app:tabMode="scrollable"
+                        app:tabPaddingEnd="@dimen/_10sdp"
+                        app:tabPaddingStart="@dimen/_10sdp"
+                        app:tabRippleColor="@null"
+                        app:tabSelectedTextColor="@color/transparent"
+                        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+                        app:tabTextColor="@color/transparent" />
+
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_15sdp">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/CustomTextViewSemiBold"
+                            android:includeFontPadding="false"
+                            android:text="@{model.title}"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp"
+                            tools:text="@string/basic_service" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/CustomTextViewRegular"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:includeFontPadding="false"
+                            android:text="• Every 5000 Kms/ 3 Months"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/CustomTextViewRegular"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:includeFontPadding="false"
+                            android:text="• Takes 4 Hours"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/CustomTextViewRegular"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:includeFontPadding="false"
+                            android:text="• 1 Month Warranty"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/CustomTextViewRegular"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:includeFontPadding="false"
+                            android:text="• Included 9 Services"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_d_price"
+                                style="@style/CustomTextViewSemiBold"
+                                android:ellipsize="marquee"
+                                android:includeFontPadding="false"
+                                android:singleLine="true"
+                                android:text="@{model.d_price}"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_13sdp"
+                                tools:text="₹2099.00" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_price"
+                                style="@style/CustomTextViewMedium"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:ellipsize="marquee"
+                                android:singleLine="true"
+                                android:text="@{model.price}"
+                                android:textSize="@dimen/_10sdp"
+                                app:set_strike_through_text_flag="@{null}"
+                                tools:text="₹3099.00" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CustomTextViewSemiBold"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:includeFontPadding="false"
+                        android:text="@string/additional_services"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_4sdp">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/img_tick_mark_1"
+                            android:layout_width="@dimen/_14sdp"
+                            android:layout_height="@dimen/_14sdp"
+                            android:src="@drawable/ic_green_tick_mark" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/CustomTextViewRegular"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_toEndOf="@+id/img_tick_mark_1"
+                            android:text="Wiper Fluid  Replacement"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="@dimen/_9sdp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginBottom="@dimen/_4sdp">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/img_tick_mark_2"
+                            android:layout_width="@dimen/_14sdp"
+                            android:layout_height="@dimen/_14sdp"
+                            android:src="@drawable/ic_green_tick_mark" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/CustomTextViewRegular"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_toEndOf="@+id/img_tick_mark_2"
+                            android:text="Car Wash"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="@dimen/_9sdp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginBottom="@dimen/_4sdp">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/img_tick_mark_3"
+                            android:layout_width="@dimen/_14sdp"
+                            android:layout_height="@dimen/_14sdp"
+                            android:src="@drawable/ic_green_tick_mark" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/CustomTextViewRegular"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_toEndOf="@+id/img_tick_mark_3"
+                            android:text="Interior Vacuuming (Carpet and Seats)"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="@dimen/_9sdp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginBottom="@dimen/_4sdp">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/img_tick_mark_4"
+                            android:layout_width="@dimen/_14sdp"
+                            android:layout_height="@dimen/_14sdp"
+                            android:src="@drawable/ic_green_tick_mark" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/CustomTextViewRegular"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_toEndOf="@+id/img_tick_mark_4"
+                            android:text="Battery Water Top Up"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="@dimen/_9sdp" />
+
+                    </RelativeLayout>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </ScrollView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_consult"
+            style="@style/CustomTextViewSemiBold"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@color/green"
+            android:gravity="center"
+            android:onClick="@{(v)->callback.onClick(v)}"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/consult"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+    </RelativeLayout>
+
+</layout>

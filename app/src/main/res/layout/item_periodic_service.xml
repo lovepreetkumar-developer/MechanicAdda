@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="pos"
+            type="Integer" />
+
+        <variable
+            name="model"
+            type="com.techfathers.mechanic_adda.models.ServiceModel" />
+
+        <variable
+            name="callback"
+            type="com.techfathers.mechanic_adda.ui.base.BaseItem.OnItemClickListener" />
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:onClick="@{(v)->callback.onItemClick(v,model,pos)}"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:layout_toStartOf="@+id/img_service"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CustomTextViewSemiBold"
+                    android:includeFontPadding="false"
+                    android:text="@{model.title}"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"
+                    tools:text="@string/basic_service" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CustomTextViewRegular"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:includeFontPadding="false"
+                    android:text="• Every 5000 Kms/ 3 Months"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/_9sdp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CustomTextViewRegular"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:includeFontPadding="false"
+                    android:text="• Takes 4 Hours"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/_9sdp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CustomTextViewRegular"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:includeFontPadding="false"
+                    android:text="• 1 Month Warranty"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/_9sdp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CustomTextViewRegular"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:includeFontPadding="false"
+                    android:text="• Included 9 Services"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/_9sdp" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_d_price"
+                        style="@style/CustomTextViewSemiBold"
+                        android:ellipsize="marquee"
+                        android:includeFontPadding="false"
+                        android:singleLine="true"
+                        android:text="@{model.d_price}"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13sdp"
+                        tools:text="₹2099.00" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_price"
+                        style="@style/CustomTextViewMedium"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:ellipsize="marquee"
+                        android:singleLine="true"
+                        android:text="@{model.price}"
+                        android:textSize="@dimen/_10sdp"
+                        app:set_strike_through_text_flag="@{null}"
+                        tools:text="₹3099.00" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/img_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_4sdp"
+                app:cardCornerRadius="@dimen/_6sdp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/image_workshop_3" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>

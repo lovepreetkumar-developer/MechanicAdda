@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_home"
+    app:startDestination="@id/home_fragment">
+
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.techfathers.mechanic_adda.ui.fragments.HomeFragment"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_home_fragment_to_periodic_services_fragment"
+            app:destination="@id/periodic_services_fragment"
+            app:enterAnim="@anim/activity_in"
+            app:exitAnim="@anim/activity_out"
+            app:popEnterAnim="@anim/activity_back_in"
+            app:popExitAnim="@anim/activity_back_out" />
+
+        <action
+            android:id="@+id/action_home_fragment_to_book_request_fragment"
+            app:destination="@id/book_request_fragment"
+            app:enterAnim="@anim/activity_in"
+            app:exitAnim="@anim/activity_out"
+            app:popEnterAnim="@anim/activity_back_in"
+            app:popExitAnim="@anim/activity_back_out" />
+
+        <action
+            android:id="@+id/action_home_fragment_to_login_fragment"
+            app:destination="@id/login_fragment"
+            app:enterAnim="@anim/activity_in"
+            app:exitAnim="@anim/activity_out"
+            app:popEnterAnim="@anim/activity_back_in"
+            app:popExitAnim="@anim/activity_back_out" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/periodic_services_fragment"
+        android:name="com.techfathers.mechanic_adda.ui.fragments.PeriodicServicesFragment"
+        tools:layout="@layout/fragment_periodic_services">
+
+        <action
+            android:id="@+id/action_periodic_services_fragment_to_service_details_fragment"
+            app:destination="@id/service_details_fragment"
+            app:enterAnim="@anim/activity_in"
+            app:exitAnim="@anim/activity_out"
+            app:popEnterAnim="@anim/activity_back_in"
+            app:popExitAnim="@anim/activity_back_out" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/service_details_fragment"
+        android:name="com.techfathers.mechanic_adda.ui.fragments.ServiceDetailsFragment"
+        tools:layout="@layout/fragment_service_details">
+
+        <argument
+            android:name="service_model"
+            android:defaultValue="@null"
+            app:argType="com.techfathers.mechanic_adda.models.ServiceModel"
+            app:nullable="true" />
+
+        <action
+            android:id="@+id/action_service_details_fragment_to_book_request_fragment"
+            app:destination="@id/book_request_fragment"
+            app:enterAnim="@anim/activity_in"
+            app:exitAnim="@anim/activity_out"
+            app:popEnterAnim="@anim/activity_back_in"
+            app:popExitAnim="@anim/activity_back_out" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/book_request_fragment"
+        android:name="com.techfathers.mechanic_adda.ui.fragments.BookRequestFragment"
+        tools:layout="@layout/fragment_book_request">
+
+        <argument
+            android:name="request_type"
+            android:defaultValue=""
+            app:argType="string"
+            app:nullable="false" />
+
+        <argument
+            android:name="service_model"
+            android:defaultValue="@null"
+            app:argType="com.techfathers.mechanic_adda.models.ServiceModel"
+            app:nullable="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="com.techfathers.mechanic_adda.ui.fragments.LoginFragment"
+        tools:layout="@layout/fragment_login" />
+
+    <fragment
+        android:id="@+id/all_requests_fragment"
+        android:name="com.techfathers.mechanic_adda.ui.fragments.AllRequestsFragment"
+        tools:layout="@layout/fragment_all_requests">
+
+        <action
+            android:id="@+id/action_all_requests_fragment_to_request_details_fragment"
+            app:destination="@id/request_details_fragment"
+            app:enterAnim="@anim/activity_in"
+            app:exitAnim="@anim/activity_out"
+            app:popEnterAnim="@anim/activity_back_in"
+            app:popExitAnim="@anim/activity_back_out" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/request_details_fragment"
+        android:name="com.techfathers.mechanic_adda.ui.fragments.RequestDetailsFragment"
+        tools:layout="@layout/fragment_request_details">
+
+        <argument
+            android:name="request_model"
+            app:argType="com.techfathers.mechanic_adda.models.RequestModel"
+            app:nullable="false" />
+
+    </fragment>
+
+</navigation>
